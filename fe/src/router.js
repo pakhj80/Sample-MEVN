@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import restaurantList from './views/restaurant-list.vue'
 
 Vue.use(Router)
 
@@ -13,6 +14,11 @@ export default new Router({
       name: 'home',
       component: Home
     },
+    { //여기부터
+      path: '/list',
+      name: 'restaurantList',
+      component: restaurantList
+    }, // 여기까지
     {
       path: '/about',
       name: 'about',
